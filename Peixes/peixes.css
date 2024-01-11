@@ -1,0 +1,78 @@
+.cabeca{
+    background-color: #64add8;
+    padding: 10px;
+}
+body{
+    margin: 0;
+    background-color: #88bcda;
+}
+.nav{
+    display:inline-block;
+    overflow: hidden;
+}
+.nav img{
+    width: 15%;
+    float: left;
+}
+.nav a{
+    margin-left: 70px;
+    margin-inline-end: 30px;
+    margin-top: 45px;
+    float:inline-end;
+    color: #01257D;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+}
+.nav a:hover{
+    background-color: #01257D;
+    color: white;
+    border-radius: 20px;
+}
+.nav a:active{
+    background-color: white;
+    color: #01257D;
+    transform: translateY(4px);
+
+}
+h1{
+    text-decoration:wavy;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #01257D;
+    margin-bottom: 60px;
+    text-align: center;
+}
+h2{
+    margin-left: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #01257D;
+}
+h3{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+p{
+    margin-inline-end: 30px;
+}
+.checked {
+    color: orange;
+}
+.main-page{
+    margin-left: 20px;
+    display: flex;
+    padding: 10px;
+}
+.images img{
+    width: 300px;
+    height: 200px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.container{
+    margin-left: 150px;
+}
+
+
+   
