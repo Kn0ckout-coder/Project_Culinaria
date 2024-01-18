@@ -20,7 +20,7 @@ body{
     color: white;
     font-size: 28px;
 }
-span{
+.title{
     color: #ea1538;
 }
 nav ul li{
@@ -134,7 +134,7 @@ p{
     background-size:cover;
 } */
 .main-page{
-    margin-left: 20px;
+    margin-left: 5.5%;
     display: grid;
     grid-column-gap: 20px;
     grid-row-gap: 20px;

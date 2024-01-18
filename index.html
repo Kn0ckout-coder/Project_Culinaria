@@ -4,7 +4,6 @@
     <link rel="stylesheet" href="Index\index.css">
     <script src="Index/index.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- <link rel="preconnect" href="https://fonts.google.gstatic.com"> -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Receitas de Culinária</title>
@@ -12,7 +11,7 @@
 <body>
     <div class = "cabeca">
         <nav>
-            <h2 class="logo">TFRC <span>Foods</span></h2>
+            <h2 class="logo">TFRC <span class="title">Foods</span></h2>
             <ul>
                 <li><a class="anav" href="Sobremesas\sobremesas.html">Sobremesas</a></li>
                 <li><a class="anav" href="Peixes\peixes.html">Peixes</a></li>
@@ -20,7 +19,7 @@
             </ul>
         </nav>
         <div class="search">
-            <input type="text" id = "searchInput" placeholder="Pesquise Receitas...">
+            <input type="text" id ="searchInput" onkeyup="search()" placeholder="Pesquise Receitas...">
             <a>
                 <i class="fa fa-search"></i>
             </a>
@@ -29,11 +28,12 @@
 <div class = "comida">
     <h2>Receitas em Destaque</h2>
     <br>
+    <div id="searchResults" class="recipeList"></div>
     <main class="main-page">
         <section class="recipeList">
-            <div>
+            <div class = "divrecipe">
                 <a href="Cebola\cebola.html"><img src="Cebola\cebola.jpg"></a>
-                <a href="Cebola\cebola.html"><h3>Cebola Frita Caramelizada</h3></a>
+                <a href="Cebola\cebola.html"><h3 class = "recipe">Cebola Frita Caramelizada</h3></a>
                 <a href="Cebola\cebola.html"><p>Cebola frita caramelizada com objetivo de se juntar com hambúrguer e sentir-se o delicioso sabor.</p></a>
                 <div class="rating-container">
                     <div class="rating" id="rating">
@@ -47,9 +47,9 @@
             </div>
         </section>
         <section class="recipeList">
-            <div>
+            <div class = "divrecipe">
             <a href="Mousse\mousse.html"><img src="Mousse\mousse.jpg"></a>
-            <a href="Mouse\mousse.html"><h3>Mousse de Cacau</h3></a>
+            <a href="Mouse\mousse.html"><h3 class = "recipe">Mousse de Cacau</h3></a>
             <a href="Mousse\mousse.html"><p>Esta maravilhosa receita de mousse de cacau não leva açúcar é muito simples e rápida de preparar.</p></a>
             <div class= "rating-container">   
                 <div class="rating" id="rating">
@@ -63,9 +63,9 @@
         </div> 
         </section>
         <section class="recipeList">
-            <div>
+            <div class = "divrecipe">
             <a href="BoloCarne\bolodecarne.html"><img src="BoloCarne\bolocarne.jpg"></a>
-            <a href="BoloCarne\bolodecarne.html"><h3>Bolo de Carne Moída</h3></a>
+            <a href="BoloCarne\bolodecarne.html"><h3 class = "recipe">Bolo de Carne Moída</h3></a>
             <a href="BoloCarne\bolodecarne.html"><p>O bolo de carne moída assado é um preparado simples e rápido perfeito para o almoço ou para o jantar.</p></a>
             <div class= "rating-container">   
                 <div class="rating" id="rating">
@@ -79,9 +79,9 @@
         </div>
         </section>
         <section class="recipeList">
-            <div>
+            <div class = "divrecipe">
             <a href="Panquecas\panquecas.html"><img src="Panquecas\panquecas.jpg"></a>
-            <a href="Panquecas\panquecas.html"><h3>Panquecas Americanas</h3></a>
+            <a href="Panquecas\panquecas.html"><h3 class = "recipe">Panquecas Americanas</h3></a>
             <a href="Panquecas\panquecas.html"><p>As panquecas são uma delícia que pode ser consumida com doces ou salgados a qualquer hora do dia.</p></a>
             <div class= "rating-container">   
                 <div class="rating" id="rating">

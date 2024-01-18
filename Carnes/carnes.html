@@ -2,71 +2,97 @@
 <html lang="pt">
 <head>
     <link rel="stylesheet" href="carnes.css">
+    <script src="../Index/index.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Receitas de Culinária</title>
-    <div class = "cabeca">
-    <nav class="nav">
-        <img src=".\..\logo.png">
-        <a href="..\.\Sobremesas\sobremesas.html">Sobremesas</a>
-        <a href="..\.\Peixes\peixes.html">Peixes</a>
-        <a href="..\.\index.html">Receitas em Destaque</a>  
-              
-    </nav>
-    <header>
-        <h1>Receitas Básicas de Culinária</h1>
-    </header>
 </head>
 <body>
+    <div class = "cabeca">
+        <nav>
+            <h2 class="logo">TFRC <span class="title">Foods</span></h2>
+            <ul>
+                <li><a class="anav" href="..\.\Sobremesas\sobremesas.html">Sobremesas</a></li>
+                <li><a class="anav" href="..\.\Peixes\peixes.html">Peixes</a></li>
+                <li><a class="anav" href="..\.\index.html">Receitas em Destaque</a></li>
+            </ul>
+        </nav>
+        <div class="search">
+            <input type="text" id ="searchInput" onkeyup="search()" placeholder="Pesquise Receitas...">
+            <a>
+                <i class="fa fa-search"></i>
+            </a>
+        </div> 
+    </div>
 </div>
-<div>
+<div class = "comida">
     <h2>Receitas em Destaque</h2>
     <br>
     <main class="main-page">
-        <section class="images">
-            <div>
+        <section class="recipeList">
+            <div class = "divrecipe">
                 <a href="..\.\Cebola\cebola.html"><img src="cebola.jpg"></a>
                 <a href="..\.\Cebola\cebola.html"><h3>Cebola Frita Caramelizada</h3></a>
                 <a href="..\.\Cebola\cebola.html"><p>Cebola frita caramelizada com objetivo de se juntar com hambúrguer e sentir-se o delicioso sabor.</p></a>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star"></span>
-                <span class="fa fa-star"></span>
+                <div class="rating-container">
+                    <div class="rating" id="rating">
+                        <span class="star" data-value="1">&#9733;</span>
+                        <span class="star" data-value="2">&#9733;</span>
+                        <span class="star" data-value="3">&#9733;</span>
+                        <span class="star" data-value="4">&#9733;</span>
+                        <span class="star" data-value="5">&#9733;</span>
+                    </div>
+                </div>
             </div>
         </section>
-        <section class="images">
-            <div>
+        <section class="recipeList">
+            <div class = "divrecipe">
             <a href="..\.\Luiguica\linguica.html"><img src="linguica.jpg"></a>
             <a href="..\.\Luiguica\linguica.html"><h3>Linguiça recheada na airfryer</h3></a>
             <a href="..\.\Luiguica\linguica.html"><p>Esta maravilhosa receita de linguiça recheada na airfryer é muito simples e rápida de preparar.</p></a>
-            <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star"></span>
+            <div class="rating-container">
+                <div class="rating" id="rating">
+                    <span class="star" data-value="1">&#9733;</span>
+                    <span class="star" data-value="2">&#9733;</span>
+                    <span class="star" data-value="3">&#9733;</span>
+                    <span class="star" data-value="4">&#9733;</span>
+                    <span class="star" data-value="5">&#9733;</span>
+                </div>
+            </div>
         </div>
         </section>
-        <section class="images">
+        <section class="recipeList">
+            <div class = "divrecipe">
             <a href="..\.\BoloCarne\bolodecarne.html"><img src="bolocarne.jpg"></a>
             <a href="..\.\BoloCarne\bolodecarne.html"><h3>Bolo de Carne Moída</h3></a>
             <a href="..\.\BoloCarne\bolodecarne.html"><p>O bolo de carne moída assado é um preparado simples e rápido perfeito para o almoço ou para o jantar.</p></a>
-            <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star"></span>
-                <span class="fa fa-star"></span>
+            <div class="rating-container">
+                <div class="rating" id="rating">
+                    <span class="star" data-value="1">&#9733;</span>
+                    <span class="star" data-value="2">&#9733;</span>
+                    <span class="star" data-value="3">&#9733;</span>
+                    <span class="star" data-value="4">&#9733;</span>
+                    <span class="star" data-value="5">&#9733;</span>
+                </div>
+            </div>
+        </div>
         </section>
-        <section class="images">
+        <section class="recipeList">
+            <div class = "divrecipe">
             <a href="..\.\Strogonoff\strogonoff.html"><img src="strogonoff.jpg"></a>
             <a href="..\.\Strogonoff\strogonoff.html"><h3>Strogonoff</h3></a>
             <a href="..\.\Strogonoff\strogonoff.html"><p>O strogonoff é um prato amado por todos e muito fácil de ser preparado.</p></a>
-            <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star"></span>
+            <div class="rating-container">
+                <div class="rating" id="rating">
+                    <span class="star" data-value="1">&#9733;</span>
+                    <span class="star" data-value="2">&#9733;</span>
+                    <span class="star" data-value="3">&#9733;</span>
+                    <span class="star" data-value="4">&#9733;</span>
+                    <span class="star" data-value="5">&#9733;</span>
+                </div>
+            </div>
+        </div>
         </section>
     </main>
 </div>

@@ -2,77 +2,101 @@
 <html lang="pt">
 <head>
     <link rel="stylesheet" href="sobremesas.css">
+    <script src="../Index/index.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Receitas de Culinária</title>
-    <div class = "cabeca">
-    <nav class="nav">
-        <img src=".\..\logo.png">
-        <a href="..\.\Peixes\peixes.html">Peixes</a>
-        <a href="..\.\Carnes\carnes.html">Carnes</a>
-        <a href="..\.\index.html">Receitas em Destaque</a>  
-              
-    </nav>
-    <header>
-        <h1>Receitas Básicas de Culinária</h1>
-    </header>
 </head>
 <body>
-</div>
-<div>
-    <h2>Receitas em Destaque</h2>
-    <br>
-    <main class="main-page">
-        <section class="images">
-            <div>
-                <a href="..\.\Arroz\arroz.html"><img src="arroz.jpeg"></a>
-                <a href="..\.\Arroz\arroz.html"><h3>Arroz-doce</h3></a>
-                <a href="..\.\Arroz\arroz.html"><p>Uma receita de arroz-doce que faz babar qualquer um</p></a>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star"></span>
-                <span class="fa fa-star"></span>
+    <div class = "cabeca">
+        <nav>
+            <h2 class="logo">TFRC <span>Foods</span></h2>
+            <ul>
+                <li><a class="anav" href="..\.\Peixes\peixes.html">Peixes</a></li>
+                <li><a class="anav" href="..\.\Carnes\carnes.html">Carnes</a></li>
+                <li><a class="anav" href="..\.\index.html">Receitas em Destaque</a></li>
+            </ul>
+        </nav>
+        <div class="search">
+            <input type="text" id ="searchInput" onkeyup="search()" placeholder="Pesquise Receitas...">
+            <a>
+                <i class="fa fa-search"></i>
+            </a>
+        </div> 
+    </div>
+
+    <div class = "comida">
+        <h2>Sobremesas</h2>
+        <br>
+        <main class="main-page">
+            <section class="recipeList">
+                <div class = "divrecipe">
+                    <a href="..\.\Arroz\arroz.html"><img src="arroz.jpeg"></a>
+                    <a href="..\.\Arroz\arroz.html"><h3>Arroz-doce</h3></a>
+                    <a href="..\.\Arroz\arroz.html"><p>Uma receita de arroz-doce que faz babar qualquer um</p></a>
+                    <div class="rating-container">
+                        <div class="rating" id="rating">
+                            <span class="star" data-value="1">&#9733;</span>
+                            <span class="star" data-value="2">&#9733;</span>
+                            <span class="star" data-value="3">&#9733;</span>
+                            <span class="star" data-value="4">&#9733;</span>
+                            <span class="star" data-value="5">&#9733;</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="recipeList">
+                <div class = "divrecipe">
+                <a href="..\.\Mousse\mousse.html"><img src="mousse.jpg"></a>
+                <a href="..\.\Mousse\mousse.html"><h3>Mouse de Cacau</h3></a>
+                <a href="..\.\Mousse\mousse.html"><p>Esta maravilhosa receita de mousse de cacau não <br>leva açúcar é muito simples e rápida de preparar.</p></a>
+                <div class="rating-container">
+                    <div class="rating" id="rating">
+                        <span class="star" data-value="1">&#9733;</span>
+                        <span class="star" data-value="2">&#9733;</span>
+                        <span class="star" data-value="3">&#9733;</span>
+                        <span class="star" data-value="4">&#9733;</span>
+                        <span class="star" data-value="5">&#9733;</span>
+                    </div>
+                </div>
+                </div>
+            </section>
+            <section class="recipeList">
+                <div class = "divrecipe">
+                <a href="..\.\Cheese\cheese.html"><img src="cheese.jpg"></a>
+                <a href="..\.\Cheese\cheese.html"><h3>Cheesecake com dióspiro</h3></a>
+                <a href="..\.\Cheese\cheese.html"><p>Uma receita deliciosa de cheesecake com dióspiro.<p></a>
+                    <div class="rating-container">
+                        <div class="rating" id="rating">
+                            <span class="star" data-value="1">&#9733;</span>
+                            <span class="star" data-value="2">&#9733;</span>
+                            <span class="star" data-value="3">&#9733;</span>
+                            <span class="star" data-value="4">&#9733;</span>
+                            <span class="star" data-value="5">&#9733;</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="recipeList">
+            <div class = "divrecipe">
+                <a href="..\.\Panquecas\panquecas.html"><img src="panquecas.jpg"></a>
+                <a href="..\.\Panquecas\panquecas.html"><h3>Panquecas Americanas</h3></a>
+                <a href="..\.\Panquecas\panquecas.html"><p>As panquecas são uma delícia que pode ser consumida<br> com doces ou salgados a qualquer hora do dia.</p></a>
+                <div class="rating-container">
+                    <div class="rating" id="rating">
+                        <span class="star" data-value="1">&#9733;</span>
+                        <span class="star" data-value="2">&#9733;</span>
+                        <span class="star" data-value="3">&#9733;</span>
+                        <span class="star" data-value="4">&#9733;</span>
+                        <span class="star" data-value="5">&#9733;</span>
+                    </div>
+                </div>
             </div>
-        </section>
-        <section class="images">
-            <div class="container">
-            <a href="..\.\Mousse\mousse.html"><img src="mousse.jpg"></a>
-            <a href="..\.\Mousse\mousse.html"><h3>Mouse de Cacau</h3></a>
-            <a href="..\.\Mousse\mousse.html"><p>Esta maravilhosa receita de mousse de cacau não <br>leva açúcar é muito simples e rápida de preparar.</p></a>
-            <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star"></span>
-        </div>
-        </section>
-        <section class="images">
-            <div class="container">
-            <a href="..\.\Cheese\cheese.html"><img src="cheese.jpg"></a>
-            <a href="..\.\Cheese\cheese.html"><h3>Cheesecake com dióspiro</h3></a>
-            <a href="..\.\Cheese\cheese.html"><p>Uma receita deliciosa de cheesecake com dióspiro.<p></a>
-            <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star"></span>
-                <span class="fa fa-star"></span>
-            </div>
-        </section>
-        <section class="images">
-            <div class="container">
-            <a href="..\.\Panquecas\panquecas.html"><img src="panquecas.jpg"></a>
-            <a href="..\.\Panquecas\panquecas.html"><h3>Panquecas Americanas</h3></a>
-            <a href="..\.\Panquecas\panquecas.html"><p>As panquecas são uma delícia que pode ser consumida<br> com doces ou salgados a qualquer hora do dia.</p></a>
-            <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star"></span>
-                <span class="fa fa-star"></span>
-            </div>
-        </section>
-    </main>
-</div>
+            </section>
+        </main>
+    </div>
+
+
 </body>
 </html>

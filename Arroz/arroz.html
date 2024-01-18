@@ -2,38 +2,48 @@
 <html lang="pt">
 <head>
     <link rel="stylesheet" href="arroz.css">
+    <script src="../Index/index.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Arroz-doce</title>
-    <div class = "cabeca">
-    <nav class="nav">
-        <img src=".\..\logo.png">
-                <a href="..\.\Sobremesas\sobremesas.html">Sobremesas</a>
-                <a href="..\.\Peixes\peixes.html">Peixes</a>
-                <a href="..\.\Carnes\carnes.html">Carnes</a>
-                <a href="..\.\index.html">Receitas em Destaque</a>       
-    </nav>
-    <header>
-        <h1>Arroz-doce</h1>
-    </header>
+
 </head>
 <body>
-</div>
-<div>
+  
+    <div class = "cabeca">
+        <nav>
+            <h2 class="logo">TFRC <span class="title">Foods</span></h2>
+            <ul>
+
+                <li><a class="anav" href="..\.\Sobremesas\sobremesas.html">Sobremesas</a></li>
+                <li><a class="anav" href="..\.\Peixes\peixes.html">Peixes</a></li>
+                <li><a class="anav" href="..\.\Carnes\carnes.html">Carnes</a></li>
+                <li><a class="anav" href="..\.\index.html">Receitas em Destaque</a></li>
+            </ul>
+        </nav>
+    </div>
+<div class = "comida">
+    <h2>Arroz-doce</h2>
+    <div>
     <h2>Ingredientes e Passos</h2>
     <br>
     <main class="main-page">
-        <section class="images">
+        <section class="recipeList">
             <div>
                 <img src="arroz.jpeg">
                 <h3>Arroz-doce</h3>
                 <p class="descrição">Doce das romarias e casamentos por todo o país, com ou sem gemas, mas sempre polvilhado com canela. Uma receita cremosa que sacia as memórias de qualquer um.</p>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star"></span>
-                <span class="fa fa-star"></span>
+                <div class="rating-container">
+                    <div class="rating" id="rating">
+                        <span class="star" data-value="1">&#9733;</span>
+                        <span class="star" data-value="2">&#9733;</span>
+                        <span class="star" data-value="3">&#9733;</span>
+                        <span class="star" data-value="4">&#9733;</span>
+                        <span class="star" data-value="5">&#9733;</span>
+                    </div>
+                </div>
+            </div>
                 <br> <br>
                 <table>
                     <tr>   
@@ -72,39 +82,6 @@
                 <p class="receita">6 - Depois de frio, polvilhe com canela.</p>
             </div>
         </section>
-
-        <!-- <section class="images">
-            <div>
-            <img src="mousse.jpg">
-            <h3>Mouse de Cacau</h3>
-            <p>Esta maravilhosa receita de mousse de cacau não leva açúcar é muito simples e rápida de preparar.</p>
-            <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star"></span>
-        </div>
-        </section>
-        <section class="images">
-            <img src="bolocarne.jpg">
-            <h3>Bolo de Carne Moída</h3>
-            <p>O bolo de carne moída assado é um preparado simples e rápido perfeito para o almoço ou para o jantar.</p>
-            <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star"></span>
-                <span class="fa fa-star"></span>
-        </section>
-        <section class="images">
-            <img src="panquecas.jpg">
-            <h3>Panquecas Americanas</h3>
-            <p>As panquecas são uma delícia que pode ser consumida com doces ou salgados a qualquer hora do dia.</p>
-            <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star"></span>
-                <span class="fa fa-star"></span>
-        </section> -->
     </main>
 </div>
 </body>

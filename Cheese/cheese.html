@@ -2,38 +2,49 @@
 <html lang="pt">
 <head>
     <link rel="stylesheet" href="cheese.css">
+    <script src="../Index/index.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cheesecake com dióspiro</title>
-    <div class = "cabeca">
-    <nav class="nav">
-        <img src=".\..\logo.png">
-        <a href="..\.\Sobremesas\sobremesas.html">Sobremesas</a>
-        <a href="..\.\Peixes\peixes.html">Peixes</a>
-        <a href="..\.\Carnes\carnes.html">Carnes</a>
-        <a href="..\.\index.html">Receitas em Destaque</a>       
-    </nav>
-    <header>
-        <h1>Cheesecake com dióspiro</h1>
-    </header>
+ 
 </head>
 <body>
-</div>
-<div>
+      
+    <div class = "cabeca">
+        <nav>
+            <h2 class="logo">TFRC <span class="title">Foods</span></h2>
+            <ul>
+
+                <li><a class="anav" href="..\.\Sobremesas\sobremesas.html">Sobremesas</a></li>
+                <li><a class="anav" href="..\.\Peixes\peixes.html">Peixes</a></li>
+                <li><a class="anav" href="..\.\Carnes\carnes.html">Carnes</a></li>
+                <li><a class="anav" href="..\.\index.html">Receitas em Destaque</a></li>
+            </ul>
+        </nav>
+    </div>
+
+<div class = "comida">
+    <h2>Cheesecake com dióspiro</h2>
+    <div>
     <h2>Ingredientes e Passos</h2>
     <br>
     <main class="main-page">
-        <section class="images">
+        <section class="recipeList">
             <div>
                 <img src="cheese.jpg">
                 <h3>Cheesecake com dióspiro</h3>
                 <p class="descrição">Parente do tomate, difere deste pelo sabor doce e cor mais alaranjada. Além de serem excelentes ao natural, os dióspiros, mesmo os muito maduros, podem transformar-se em receitas deliciosas como este cheesecake com dióspiro.</p>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star"></span>
-                <span class="fa fa-star"></span>
+                <div class="rating-container">
+                    <div class="rating" id="rating">
+                        <span class="star" data-value="1">&#9733;</span>
+                        <span class="star" data-value="2">&#9733;</span>
+                        <span class="star" data-value="3">&#9733;</span>
+                        <span class="star" data-value="4">&#9733;</span>
+                        <span class="star" data-value="5">&#9733;</span>
+                    </div>
+                </div>
+            </div>
                 <br> <br>
                 <table>
                     <tr>   
@@ -71,39 +82,6 @@
                 <p class="receita">4 - Retire a película e coloque os aros nos pratos de servir. Solte os aros, polvilhe os cheesecakes com canela e decore com folhas de hortelã.</p>
             </div>
         </section>
-
-        <!-- <section class="images">
-            <div>
-            <img src="mousse.jpg">
-            <h3>Mouse de Cacau</h3>
-            <p>Esta maravilhosa receita de mousse de cacau não leva açúcar é muito simples e rápida de preparar.</p>
-            <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star"></span>
-        </div>
-        </section>
-        <section class="images">
-            <img src="bolocarne.jpg">
-            <h3>Bolo de Carne Moída</h3>
-            <p>O bolo de carne moída assado é um preparado simples e rápido perfeito para o almoço ou para o jantar.</p>
-            <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star"></span>
-                <span class="fa fa-star"></span>
-        </section>
-        <section class="images">
-            <img src="panquecas.jpg">
-            <h3>Panquecas Americanas</h3>
-            <p>As panquecas são uma delícia que pode ser consumida com doces ou salgados a qualquer hora do dia.</p>
-            <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star"></span>
-                <span class="fa fa-star"></span>
-        </section> -->
     </main>
 </div>
 </body>
