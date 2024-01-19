@@ -1,14 +1,20 @@
 <!DOCTYPE html>
 <html lang="pt">
 <head>
+    <!-- ***********IMPORTAÇÕES*************** -->
     <link rel="stylesheet" href="peixes.css">
     <script src="../Index/index.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&family=Noto+Sans+SC:wght@300&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Receitas de Culinária</title>
 </head>
 <body>
+    <!-- ***********NAV BAR*************** -->
     <div class = "cabeca">
         <nav>
             <h2 class="logo">TFRC <span class="title">Foods</span></h2>
@@ -19,13 +25,13 @@
             </ul>
         </nav>
         <div class="search">
-            <input type="text" id ="searchInput" onkeyup="search()" placeholder="Pesquise Receitas...">
+            <input type="text" id ="searchInput" onkeyup="search()" placeholder="Pesquise Receitas..."> <!-- SEARCH BAR -->
             <a>
                 <i class="fa fa-search"></i>
             </a>
         </div> 
     </div>
-
+<!-- ***********RECEITAS*************** -->
 <div class = "comida">
     <h2>Receitas em Destaque</h2>
     <br>
@@ -35,15 +41,17 @@
                 <a href="..\.\Salmao\salmao.html"><img src="salmao.jpg"></a>
                 <a href="..\.\Salmao\salmao.html"><h3>Pasta de salmão</h3></a>
                 <a href="..\.\Salmao\salmao.html"><p>Uma deliciosa pasta de salmão</p></a>
-                <div class="rating-container">
+                <!-- ESTRELAS -->
+                <div class="rating-container" data-image-id="salmao"> <!-- DATA IMAGE ID PARA GUARDAR NO LOCAL STORAGE -->
                     <div class="rating" id="rating">
-                        <span class="star" data-value="1">&#9733;</span>
+                        <span class="star" data-value="1">&#9733;</span> <!-- DATA VALUE PARA SABER A QUANTIDADE DE ESTRELAS QUE SÃO PREENCHIDAS -->
                         <span class="star" data-value="2">&#9733;</span>
                         <span class="star" data-value="3">&#9733;</span>
                         <span class="star" data-value="4">&#9733;</span>
                         <span class="star" data-value="5">&#9733;</span>
                     </div>
                 </div>
+                <!-- --ESTRELAS-- -->
             </div>
         </section>
         <section class="recipeList">
@@ -51,7 +59,7 @@
             <a href="..\.\Bolinhos\bolinhos.html"><img src="bolinhos.jpg"></a>
             <a href="..\.\Bolinhos\bolinhos.html"><h3>Bolinhos de peixe</h3></a>
             <a href="..\.\Bolinhos\bolinhos.html"><p>Sabia que pode aproveitar as sobras de peixe.</p></a>
-                <div class="rating-container">
+                <div class="rating-container" data-image-id="bolinhos">
                     <div class="rating" id="rating">
                         <span class="star" data-value="1">&#9733;</span>
                         <span class="star" data-value="2">&#9733;</span>
@@ -67,7 +75,7 @@
                 <a href="..\.\Feijoada\feijoada.html"><img src="feijoada.jpg"></a>
                 <a href="..\.\Feijoada\feijoada.html"><h3>Feijoada do mar</h3></a>
                 <a href="..\.\Feijoada\feijoada.html"><p>Uma feijoada do mar é o prato tradicional perfeito para aproveitar as sobras de peixe.</p></a>
-                <div class="rating-container">
+                <div class="rating-container" data-image-id="feijoada">
                     <div class="rating" id="rating">
                         <span class="star" data-value="1">&#9733;</span>
                         <span class="star" data-value="2">&#9733;</span>
@@ -83,7 +91,7 @@
                 <a href="..\.\Caldo\caldo.html"><img src="caldo.jpeg"></a>
                 <a href="..\.\Caldo\caldo.html"><h3>Caldo de peixe</h3></a>
                 <a href="..\.\Caldo\caldo.html"><p>O caldo de peixe é uma receita saudável e nutritiva, que fica pronta em apenas 30 minutos.</p></a>
-                <div class="rating-container">
+                <div class="rating-container" data-image-id="caldo">
                     <div class="rating" id="rating">
                         <span class="star" data-value="1">&#9733;</span>
                         <span class="star" data-value="2">&#9733;</span>
