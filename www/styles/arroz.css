@@ -1,5 +1,4 @@
 /* TODA A PARTE DA NAV E CORPO*/
-
 header{
     height: 150px;
     width: 100%;
@@ -41,11 +40,7 @@ body{
     background-size: cover;
     background-position: center;
 }
-ul{
-    list-style:none;
-    font-size: 18px;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
+
 a{
     text-decoration: none;
     color: black;
@@ -113,39 +108,23 @@ main section img:hover{
 
 /* --------ESTRELAS DA RECEITA------ */
 
-/* PROPRIEDADES E TABELA DE INGREDIENTES */
-.property:before {
-    content: "";
-    position: relative;
-    top: 3px;
-    margin-right: 7px;
-    display: inline-block;
-    background-image: url("../images/properties.png");
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: 16px;
-    width: 16px;
-    height: 16px;   
+/* LISTAS */
+ol{
+    list-style:decimal;
 }
-.property.convidados:before {
-    margin-right: 10px;
-    background-position: 0 0
+ol li{
+    margin-inline-end: 30px;
+    color:rgb(255, 255, 255);
+    font-family: 'Noto Sans SC', sans-serif;
 }
+ul{
+    list-style:none;
+    font-size: 18px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+/* -------LISTAS------ */
 
-.property.duracao:before {
-    margin-left: 10px;
-    background-position: 0 -17px;
-}
-
-.property.forma:before {
-    margin-left: 10px;
-    background-position: 0 -34px;
-}
-
-.property.dificuldade:before {
-    margin-left: 10px;
-    background-position: 0 -51px;
-}
+/* TABELA DE INGREDIENTES */
 table {
     background-color: #ddd;
     border-collapse: collapse;
@@ -164,6 +143,6 @@ th {
     padding: 10px;
     text-align: center;
 }
-/* -------PROPRIEDADES E TABELA DE INGREDIENTES------ */
+/* -------TABELA DE INGREDIENTES------ */
 
    

@@ -12,6 +12,7 @@ fetch('/receitas.json')
             const selectedRecipe = data.find(receita => receita.name === recipeName);
 
             if (selectedRecipe) {
+                console.log(selectedRecipe);
                 const titleEl = document.querySelector('main');
                 const sectionEl = document.querySelector('section');
                 const titlePart = `
@@ -23,22 +24,13 @@ fetch('/receitas.json')
                     <img src="${selectedRecipe.image}">
                     <h3>${selectedRecipe.name}</h3>
                     <p>${selectedRecipe.description}</p>
-                    <div data-role="rating-container" data-image-id='${pageName}'>
-                        <div data-role='rating' id="rating">
-                        <span data-role='star' data-value="1">&#9733;</span> 
-                        <span data-role='star' data-value="2">&#9733;</span>
-                        <span data-role='star' data-value="3">&#9733;</span>
-                        <span data-role='star' data-value="4">&#9733;</span>
-                        <span data-role='star' data-value="5">&#9733;</span>
-                        </div>
-                    </div>
-                    <br> <br>
                 `;
                 //fazer a correção dessa parte das estrelas e otimizar o sistema de ficheiros
 
                 sectionEl.insertAdjacentHTML('afterbegin', firstRecipePart);
 
                 const lastRecipePart = `
+                <br>    
                 <table>
                     <tr>
                         <th>Ingredientes para ${selectedRecipe.name}</th>
@@ -56,7 +48,7 @@ fetch('/receitas.json')
                     ${selectedRecipe.steps.map(passo => `<li>${passo}</li>`).join('')}
                 </ol>
                 `;
-                sectionEl.insertAdjacentHTML('beforeend', lastRecipePart);
+                sectionEl.insertAdjacentHTML('beforeend', lastRecipePart);  
 
                 } else {
                     console.error('Receita não encontrada.');

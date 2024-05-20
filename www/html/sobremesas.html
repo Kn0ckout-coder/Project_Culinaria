@@ -2,109 +2,89 @@
 <html lang="pt">
 <head>
     <!-- ***********IMPORTAÇÕES*************** -->
-    <link rel="stylesheet" href="sobremesas.css">
-    <script src="../Index/index.js"></script>
+    <link rel="stylesheet" href="../styles/sobremesas.css"> 
+    <script src="../scripts/rating.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta charset="UTF-8">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&family=Noto+Sans+SC:wght@300&display=swap" rel="stylesheet">
-    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Receitas de Culinária</title>
 </head>
 <body>
     <!-- ***********NAVBAR*************** -->
-    <div class = "cabeca">
+    <header>
         <nav>
-            <h2 class="logo">TFRC <span class="title">Foods</span></h2>
+            <h2>TFRC <span>Foods</span></h2>
             <ul>
-                <li><a class="anav" href="..\.\Peixes\peixes.html">Peixes</a></li>
-                <li><a class="anav" href="..\.\Carnes\carnes.html">Carnes</a></li>
-                <li><a class="anav" href="..\.\index.html">Receitas em Destaque</a></li>
+                <li><a href="./carnes.html">Carnes</a></li>
+                <li><a href="./peixes.html">Peixes</a></li>
+                <li><a href="../index.html">Receitas em Destaque</a></li>
             </ul>
         </nav>
-        <div class="search">
-            <input type="text" id ="searchInput" onkeyup="search()" placeholder="Pesquise Receitas..."> <!-- SEARCH BAR -->
-            <a>
-                <i class="fa fa-search"></i>
-            </a>
-        </div> 
-    </div>
-    <!-- ***********RECEITAS*************** -->
-    <div class = "comida">
         <h2>Sobremesas</h2>
         <br>
-        <main class="main-page">
-            <section class="recipeList">
-                <div class = "divrecipe">
-                    <a href="..\.\Arroz\arroz.html"><img src="arroz.jpeg"></a>
-                    <a href="..\.\Arroz\arroz.html"><h3>Arroz-doce</h3></a>
-                    <a href="..\.\Arroz\arroz.html"><p>Uma receita de arroz-doce que faz babar qualquer um</p></a>
-                    <!-- --ESTRELAS-- -->
-                    <div class="rating-container" data-image-id="arroz"> <!-- DATA IMAGE ID PARA GUARDAR NO LOCAL STORAGE -->
-                        <div class="rating" id="rating"> 
-                            <span class="star" data-value="1">&#9733;</span> <!-- DATA VALUE PARA SABER A QUANTIDADE DE ESTRELAS QUE SÃO PREENCHIDAS -->
-                            <span class="star" data-value="2">&#9733;</span>
-                            <span class="star" data-value="3">&#9733;</span>
-                            <span class="star" data-value="4">&#9733;</span>
-                            <span class="star" data-value="5">&#9733;</span>
-                        </div>
-                    </div>
-                    <!-- --ESTRELAS-- -->
-                </div>
-            </section>
-            <section class="recipeList">
-                <div class = "divrecipe">
-                <a href="..\.\Mousse\mousse.html"><img src="mousse.jpg"></a>
-                <a href="..\.\Mousse\mousse.html"><h3>Mouse de Cacau</h3></a>
-                <a href="..\.\Mousse\mousse.html"><p>Esta maravilhosa receita de mousse de cacau não <br>leva açúcar é muito simples e rápida de preparar.</p></a>
-                <div class="rating-container" data-image-id="mousse">
-                    <div class="rating" id="rating">
-                        <span class="star" data-value="1">&#9733;</span>
-                        <span class="star" data-value="2">&#9733;</span>
-                        <span class="star" data-value="3">&#9733;</span>
-                        <span class="star" data-value="4">&#9733;</span>
-                        <span class="star" data-value="5">&#9733;</span>
+    </header>
+    <main>
+        <section>
+                <a href="./arroz.html"><img src="../images/arroz.jpeg"></a>
+                <a href="./arroz.html"><h3>Cebola Frita Caramelizada</h3></a>
+                <a href="./arroz.html"><p>Cebola frita caramelizada com objetivo de se juntar com hambúrguer e sentir-se o delicioso sabor.</p></a>
+                <!-- ESTRELAS -->
+                <div data-role="rating-container" data-image-id='arroz'>
+                    <div data-role='rating' id="rating">
+                    <span data-role='star' data-value="1">&#9733;</span> 
+                    <span data-role='star' data-value="2">&#9733;</span>
+                    <span data-role='star' data-value="3">&#9733;</span>
+                    <span data-role='star' data-value="4">&#9733;</span>
+                    <span data-role='star' data-value="5">&#9733;</span>
                     </div>
                 </div>
-                </div>
-            </section>
-            <section class="recipeList">
-                <div class = "divrecipe">
-                <a href="..\.\Cheese\cheese.html"><img src="cheese.jpg"></a>
-                <a href="..\.\Cheese\cheese.html"><h3>Cheesecake com dióspiro</h3></a>
-                <a href="..\.\Cheese\cheese.html"><p>Uma receita deliciosa de cheesecake com dióspiro.<p></a>
-                    <div class="rating-container" data-image-id="cheese">
-                        <div class="rating" id="rating">
-                            <span class="star" data-value="1">&#9733;</span>
-                            <span class="star" data-value="2">&#9733;</span>
-                            <span class="star" data-value="3">&#9733;</span>
-                            <span class="star" data-value="4">&#9733;</span>
-                            <span class="star" data-value="5">&#9733;</span>
-                        </div>
+                <!-- --ESTRELAS-- -->
+        </section>
+        <section>
+                <a href="./mousse.html"><img src="../images/mousse.jpg"></a>
+                <a href="./mousse.html"><h3>Mousse de Cacau</h3></a>
+                <a href="./mousse.html"><p>Esta maravilhosa receita de mousse de cacau não leva açúcar é muito simples e rápida de preparar.</p></a>
+                <div data-role="rating-container" data-image-id='mousse'>
+                    <div data-role='rating' id="rating">
+                    <span data-role='star' data-value="1">&#9733;</span> 
+                    <span data-role='star' data-value="2">&#9733;</span>
+                    <span data-role='star' data-value="3">&#9733;</span>
+                    <span data-role='star' data-value="4">&#9733;</span>
+                    <span data-role='star' data-value="5">&#9733;</span>
                     </div>
                 </div>
-            </section>
-            <section class="recipeList">
-            <div class = "divrecipe">
-                <a href="..\.\Panquecas\panquecas.html"><img src="panquecas.jpg"></a>
-                <a href="..\.\Panquecas\panquecas.html"><h3>Panquecas Americanas</h3></a>
-                <a href="..\.\Panquecas\panquecas.html"><p>As panquecas são uma delícia que pode ser consumida<br> com doces ou salgados a qualquer hora do dia.</p></a>
-                <div class="rating-container" data-image-id="panquecas">
-                    <div class="rating" id="rating">
-                        <span class="star" data-value="1">&#9733;</span>
-                        <span class="star" data-value="2">&#9733;</span>
-                        <span class="star" data-value="3">&#9733;</span>
-                        <span class="star" data-value="4">&#9733;</span>
-                        <span class="star" data-value="5">&#9733;</span>
-                    </div>
+        </section>
+        <section>
+            <a href="./cheese.html"><img src="../images/cheese.jpg"></a>
+            <a href="./cheese.html"><h3>Bolo de Carne Moída</h3></a>
+            <a href="./cheese.html"><p>O bolo de carne moída assado é um preparado simples e rápido perfeito para o almoço ou para o jantar.</p></a>
+            <div data-role="rating-container" data-image-id='cheese'>
+                <div data-role='rating' id="rating">
+                <span data-role='star' data-value="1">&#9733;</span> 
+                <span data-role='star' data-value="2">&#9733;</span>
+                <span data-role='star' data-value="3">&#9733;</span>
+                <span data-role='star' data-value="4">&#9733;</span>
+                <span data-role='star' data-value="5">&#9733;</span>
                 </div>
             </div>
-            </section>
-        </main>
-    </div>
-
-
+        </section>
+        <section>
+            <a href="./panquecas.html"><img src="../images/panquecas.jpg"></a>
+            <a href="./panquecas.html"><h3>Panquecas Americanas</h3></a>
+            <a href="./panquecas.html"><p>As panquecas são uma delícia que pode ser consumida com doces ou salgados a qualquer hora do dia.</p></a>
+            <div data-role="rating-container" data-image-id='panquecas'>
+                <div data-role='rating' id="rating">
+                <span data-role='star' data-value="1">&#9733;</span> 
+                <span data-role='star' data-value="2">&#9733;</span>
+                <span data-role='star' data-value="3">&#9733;</span>
+                <span data-role='star' data-value="4">&#9733;</span>
+                <span data-role='star' data-value="5">&#9733;</span>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
