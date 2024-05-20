@@ -22,6 +22,7 @@
     },
     {
         "name": "Bolinhos de Peixe",
+        "category": "peixes",
         "image": "../images/bolinhos.jpg",
         "description": "Sabia que pode aproveitar as sobras de peixe.",
         "ingredients": [

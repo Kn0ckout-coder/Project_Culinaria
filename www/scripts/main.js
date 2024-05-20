@@ -1,6 +1,16 @@
 const nameMap = {
+    'arroz': 'Arroz Doce',
     'bolinhos': 'Bolinhos de Peixe',
-    'arroz': 'Arroz Doce'
+    'bolodecarne': 'Bolo de Carne',
+    'caldo': 'Caldo de Peixe',
+    'cebola': 'Cebola Frita Caramelizada',
+    'cheese': 'Cheesecake com Dióspiro',
+    'feijoada': 'Feijoada do Mar',
+    'linguica': 'Linguiça Recheada na AirFryer',
+    'mousse': 'Mousse de Cacau',
+    'panquecas': 'Panquecas Americanas',
+    'salmao': 'Pasta de Salmao',
+    'strogonoff': 'Strogonoff'
 };
 fetch('/receitas.json')
     .then(response => response.json())

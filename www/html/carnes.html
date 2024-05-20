@@ -2,108 +2,90 @@
 <html lang="pt">
 <head>
     <!-- ***********IMPORTAÇÕES*************** -->
-    <link rel="stylesheet" href="carnes.css">
-    <script src="../Index/index.js"></script>
+    <link rel="stylesheet" href="../styles/variasReceitas.css"> 
+    <script src="../scripts/rating.js"></script>
+    <script src="../scripts/main2.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta charset="UTF-8">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&family=Noto+Sans+SC:wght@300&display=swap" rel="stylesheet">
-    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Receitas de Culinária</title>
 </head>
 <body>
     <!-- ***********NAVBAR*************** -->
-    <div class = "cabeca">
+    <header>
         <nav>
-            <h2 class="logo">TFRC <span class="title">Foods</span></h2>
+            <h2>TFRC <span>Foods</span></h2>
             <ul>
-                <li><a class="anav" href="..\.\Sobremesas\sobremesas.html">Sobremesas</a></li>
-                <li><a class="anav" href="..\.\Peixes\peixes.html">Peixes</a></li>
-                <li><a class="anav" href="..\.\index.html">Receitas em Destaque</a></li>
+                <li><a href="./peixes.html">Peixes</a></li>
+                <li><a href="./sobremesas.html">Sobremesas</a></li>
+                <li><a href="../index.html">Receitas em Destaque</a></li>
             </ul>
         </nav>
-        <div class="search">
-            <input type="text" id ="searchInput" onkeyup="search()" placeholder="Pesquise Receitas..."> <!-- SEARCH BAR -->
-            <a>
-                <i class="fa fa-search"></i>
-            </a>
-        </div> 
-    </div>
-</div>
-<!-- ***********RECEITAS*************** -->
-<div class = "comida">
-    <h2>Receitas em Destaque</h2>
-    <br>
-    <main class="main-page">
-        <section class="recipeList">
-            <div class = "divrecipe">
-                <a href="..\.\Cebola\cebola.html"><img src="cebola.jpg"></a>
-                <a href="..\.\Cebola\cebola.html"><h3>Cebola Frita Caramelizada</h3></a>
-                <a href="..\.\Cebola\cebola.html"><p>Cebola frita caramelizada com objetivo de se juntar com hambúrguer e sentir-se o delicioso sabor.</p></a>
+        <h2>Carnes</h2>
+        <br>
+    </header>
+    <main>
+        <section>
+                <a href="./cebola.html"><img src="../images/cebola.jpg"></a>
+                <a href="./cebola.html"><h3>Cebola Frita Caramelizada</h3></a>
+                <a href="./cebola.html"><p>Cebola frita caramelizada com objetivo de se juntar com hambúrguer e sentir-se o delicioso sabor.</p></a>
                 <!-- ESTRELAS -->
-                <div class="rating-container" data-image-id="cebola"> <!-- DATA IMAGE ID PARA GUARDAR NO LOCAL STORAGE -->
-                    <div class="rating" id="rating">
-                        <span class="star" data-value="1">&#9733;</span> <!-- DATA VALUE PARA SABER A QUANTIDADE DE ESTRELAS QUE SÃO PREENCHIDAS -->
-                        <span class="star" data-value="2">&#9733;</span>
-                        <span class="star" data-value="3">&#9733;</span>
-                        <span class="star" data-value="4">&#9733;</span>
-                        <span class="star" data-value="5">&#9733;</span>
+                <div data-role="rating-container" data-image-id='cebola'>
+                    <div data-role='rating' id="rating">
+                    <span data-role='star' data-value="1">&#9733;</span> 
+                    <span data-role='star' data-value="2">&#9733;</span>
+                    <span data-role='star' data-value="3">&#9733;</span>
+                    <span data-role='star' data-value="4">&#9733;</span>
+                    <span data-role='star' data-value="5">&#9733;</span>
                     </div>
                 </div>
                 <!-- --ESTRELAS-- -->
-            </div>
         </section>
-        <section class="recipeList">
-            <div class = "divrecipe">
-            <a href="..\.\Luiguica\linguica.html"><img src="linguica.jpg"></a>
-            <a href="..\.\Luiguica\linguica.html"><h3>Linguiça recheada na airfryer</h3></a>
-            <a href="..\.\Luiguica\linguica.html"><p>Esta maravilhosa receita de linguiça recheada na airfryer é muito simples e rápida de preparar.</p></a>
-            <div class="rating-container" data-image-id="linguica">
-                <div class="rating" id="rating">
-                    <span class="star" data-value="1">&#9733;</span>
-                    <span class="star" data-value="2">&#9733;</span>
-                    <span class="star" data-value="3">&#9733;</span>
-                    <span class="star" data-value="4">&#9733;</span>
-                    <span class="star" data-value="5">&#9733;</span>
+        <section>
+                <a href="./linguica.html"><img src="../images/linguica.jpg"></a>
+                <a href="./linguica.html"><h3>Linguiça Recheada na Airfryer</h3></a>
+                <a href="./linguica.html"><p>Esta maravilhosa receita de linguiça recheada na airfryer é muito simples e rápida de preparar.</p></a>
+                <div data-role="rating-container" data-image-id='linguica'>
+                    <div data-role='rating' id="rating">
+                    <span data-role='star' data-value="1">&#9733;</span> 
+                    <span data-role='star' data-value="2">&#9733;</span>
+                    <span data-role='star' data-value="3">&#9733;</span>
+                    <span data-role='star' data-value="4">&#9733;</span>
+                    <span data-role='star' data-value="5">&#9733;</span>
+                    </div>
+                </div>
+        </section>
+        <section>
+            <a href="./strogonoff.html"><img src="../images/strogonoff.jpg"></a>
+            <a href="./strogonoff.html"><h3>Strogonoff</h3></a>
+            <a href="./strogonoff.html"><p>O strogonoff é um prato amado por todos e muito fácil de ser preparado.</p></a>
+            <div data-role="rating-container" data-image-id='strogonoff'>
+                <div data-role='rating' id="rating">
+                <span data-role='star' data-value="1">&#9733;</span> 
+                <span data-role='star' data-value="2">&#9733;</span>
+                <span data-role='star' data-value="3">&#9733;</span>
+                <span data-role='star' data-value="4">&#9733;</span>
+                <span data-role='star' data-value="5">&#9733;</span>
                 </div>
             </div>
-        </div>
         </section>
-        <section class="recipeList">
-            <div class = "divrecipe">
-            <a href="..\.\BoloCarne\bolodecarne.html"><img src="bolocarne.jpg"></a>
-            <a href="..\.\BoloCarne\bolodecarne.html"><h3>Bolo de Carne Moída</h3></a>
-            <a href="..\.\BoloCarne\bolodecarne.html"><p>O bolo de carne moída assado é um preparado simples e rápido perfeito para o almoço ou para o jantar.</p></a>
-            <div class="rating-container" data-image-id="bolocarne">
-                <div class="rating" id="rating">
-                    <span class="star" data-value="1">&#9733;</span>
-                    <span class="star" data-value="2">&#9733;</span>
-                    <span class="star" data-value="3">&#9733;</span>
-                    <span class="star" data-value="4">&#9733;</span>
-                    <span class="star" data-value="5">&#9733;</span>
+        <section>
+            <a href="./bolodecarne.html"><img src="../images/bolocarne.jpg"></a>
+            <a href="./bolodecarne.html"><h3>Bolo de Carne Moída</h3></a>
+            <a href="./bolodecarne.html"><p>O bolo de carne moída assado é um preparado simples e rápido perfeito para o almoço ou para o jantar.</p></a>
+            <div data-role="rating-container" data-image-id='bolocarne'>
+                <div data-role='rating' id="rating">
+                <span data-role='star' data-value="1">&#9733;</span> 
+                <span data-role='star' data-value="2">&#9733;</span>
+                <span data-role='star' data-value="3">&#9733;</span>
+                <span data-role='star' data-value="4">&#9733;</span>
+                <span data-role='star' data-value="5">&#9733;</span>
                 </div>
             </div>
-        </div>
-        </section>
-        <section class="recipeList">
-            <div class = "divrecipe">
-            <a href="..\.\Strogonoff\strogonoff.html"><img src="strogonoff.jpg"></a>
-            <a href="..\.\Strogonoff\strogonoff.html"><h3>Strogonoff</h3></a>
-            <a href="..\.\Strogonoff\strogonoff.html"><p>O strogonoff é um prato amado por todos e muito fácil de ser preparado.</p></a>
-            <div class="rating-container" data-image-id="strogonoff">
-                <div class="rating" id="rating">
-                    <span class="star" data-value="1">&#9733;</span>
-                    <span class="star" data-value="2">&#9733;</span>
-                    <span class="star" data-value="3">&#9733;</span>
-                    <span class="star" data-value="4">&#9733;</span>
-                    <span class="star" data-value="5">&#9733;</span>
-                </div>
-            </div>
-        </div>
         </section>
     </main>
-</div>
 </body>
 </html>
