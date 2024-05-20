@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="pt">
 <head>
-    <link rel="stylesheet" href="cebola.css">
-    <script src="../Index/index.js"></script>
+    <link rel="stylesheet" href="../styles/receitas.css">
+    <script src="../scripts/rating.js"></script>
+    <script src="../scripts/main.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta charset="UTF-8">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -10,78 +11,33 @@
     <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&family=Noto+Sans+SC:wght@300&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cebola Frita Caramelizada</title>
+    <title>Receitas de Culinária</title>
 
 </head>
 <body>
-
-    <div class = "cabeca">
+    <header>
         <nav>
-            <h2 class="logo">TFRC <span class="title">Foods</span></h2>
+            <h2>TFRC <span>Foods</span></h2>
             <ul>
-
-                <li><a class="anav" href="..\.\Sobremesas\sobremesas.html">Sobremesas</a></li>
-                <li><a class="anav" href="..\.\Peixes\peixes.html">Peixes</a></li>
-                <li><a class="anav" href="..\.\Carnes\carnes.html">Carnes</a></li>
-                <li><a class="anav" href="..\.\index.html">Receitas em Destaque</a></li>
+                <li><a href="./sobremesas.html">Sobremesas</a></li>
+                <li><a href="./peixes.html">Peixes</a></li>
+                <li><a href="../index.html">Receitas em Destaque</a></li>
             </ul>
         </nav>
-    </div>
-<div class = "comida">
-    <h2>Cebola Frita Caramelizada</h2>
-    <div>
-    <h2>Ingredientes e Passos</h2>
-    <br>
-    <main class="main-page">
-        <section class="recipeList">
-            <div>
-                <img src="cebola.jpg">
-                <h3>Cebola Frita Caramelizada</h3>
-                <p class="descrição">Cebola frita caramelizada com objetivo de se juntar com hambúrguer e sentir-se o delicioso sabor.</p>
-                <div class="rating-container" data-image-id="cebola">
-                    <div class="rating" id="rating">
-                        <span class="star" data-value="1">&#9733;</span>
-                        <span class="star" data-value="2">&#9733;</span>
-                        <span class="star" data-value="3">&#9733;</span>
-                        <span class="star" data-value="4">&#9733;</span>
-                        <span class="star" data-value="5">&#9733;</span>
-                    </div>
+    </header>
+    <main>
+        <section>
+            <div data-role="rating-container" data-image-id='cebola'>
+                <div data-role='rating' id="rating">
+                <span data-role='star' data-value="1">&#9733;</span> 
+                <span data-role='star' data-value="2">&#9733;</span>
+                <span data-role='star' data-value="3">&#9733;</span>
+                <span data-role='star' data-value="4">&#9733;</span>
+                <span data-role='star' data-value="5">&#9733;</span>
                 </div>
             </div>
-                <br> <br>
-                <table>
-                    <tr>   
-                        <th>
-                            <span class="property convidados">2 convidados</span>
-                            <span class="property duracao">15m</span>
-                            <span class="property forma">Acompanhamento</span>
-                            <span class="property dificuldade">Dificuldade baixa</span>
-                        </th>
-                    </tr>
-                    <tr>
-                        <th>Ingredientes para fazer Cebola caramelizada para hambúrguer</th>
-                    </tr>
-                    <tr>
-                        <td colspan="2">
-                            <ul>
-                                <li>2 cebolas</li>
-                                <li>2 colheres de sopa de shoyu (molho de soja)</li>
-                                <li>2 colheres de sopa de canela em pó</li>
-                                <li>1 colher de chá de manteiga</li>
-                                <li>½ colher de chá de açúcar mascavo</li>
-                            </ul>
-                        </td>
-                    </tr>
-                </table>
-
-                <h2>Passos para fazer Cebola caramelizada para hambúrguer</h2>
-                <p class="receita">1 - Comece por descascar as cebolas e cortar em rodelas</p>
-                <p class="receita">2 - Leve ao fogo uma frigideira com a manteiga e, quando derreter, coloque as rodelas de cebola espalhadas. Deixe no fogo brando por uns 5-7 minutos ou até a cebola ficar transparente.</p>
-                <p class="receita">3 - Após o passo anterior, acrescente o shoyu(molho de soja) e o açúcar e mexa para misturar e separar os aros de cebola. Deixe no fogo brando por mais 5 minutos.</p>
-                <p class="receita">4 - Quando a cebola ficar bem macia e caramelada, pode desligar o fogo e servir com o humbúguer que fez a parte</p>
-            </div>
+            <br>
         </section>
     </main>
-</div>
 </body>
 </html>

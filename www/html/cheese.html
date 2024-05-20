@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="pt">
 <head>
-    <link rel="stylesheet" href="cheese.css">
-    <script src="../Index/index.js"></script>
+    <link rel="stylesheet" href="../styles/receitas.css">
+    <script src="../scripts/rating.js"></script>
+    <script src="../scripts/main.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta charset="UTF-8">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -10,83 +11,33 @@
     <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&family=Noto+Sans+SC:wght@300&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cheesecake com dióspiro</title>
+    <title>Receitas de Culinária</title>
  
 </head>
 <body>
-      
-    <div class = "cabeca">
+    <header>
         <nav>
-            <h2 class="logo">TFRC <span class="title">Foods</span></h2>
+            <h2>TFRC <span>Foods</span></h2>
             <ul>
-
-                <li><a class="anav" href="..\.\Sobremesas\sobremesas.html">Sobremesas</a></li>
-                <li><a class="anav" href="..\.\Peixes\peixes.html">Peixes</a></li>
-                <li><a class="anav" href="..\.\Carnes\carnes.html">Carnes</a></li>
-                <li><a class="anav" href="..\.\index.html">Receitas em Destaque</a></li>
+                <li><a href="./peixes.html">Peixes</a></li>
+                <li><a href="./carnes.html">Carnes</a></li>
+                <li><a href="../index.html">Receitas em Destaque</a></li>
             </ul>
         </nav>
-    </div>
-
-<div class = "comida">
-    <h2>Cheesecake com dióspiro</h2>
-    <div>
-    <h2>Ingredientes e Passos</h2>
-    <br>
-    <main class="main-page">
-        <section class="recipeList">
-            <div>
-                <img src="cheese.jpg">
-                <h3>Cheesecake com dióspiro</h3>
-                <p class="descrição">Parente do tomate, difere deste pelo sabor doce e cor mais alaranjada. Além de serem excelentes ao natural, os dióspiros, mesmo os muito maduros, podem transformar-se em receitas deliciosas como este cheesecake com dióspiro.</p>
-                <div class="rating-container" data-image-id="cheese">
-                    <div class="rating" id="rating">
-                        <span class="star" data-value="1">&#9733;</span>
-                        <span class="star" data-value="2">&#9733;</span>
-                        <span class="star" data-value="3">&#9733;</span>
-                        <span class="star" data-value="4">&#9733;</span>
-                        <span class="star" data-value="5">&#9733;</span>
-                    </div>
+    </header>
+    <main>
+        <section>
+            <div data-role="rating-container" data-image-id='cheese'>
+                <div data-role='rating' id="rating">
+                <span data-role='star' data-value="1">&#9733;</span> 
+                <span data-role='star' data-value="2">&#9733;</span>
+                <span data-role='star' data-value="3">&#9733;</span>
+                <span data-role='star' data-value="4">&#9733;</span>
+                <span data-role='star' data-value="5">&#9733;</span>
                 </div>
             </div>
-                <br> <br>
-                <table>
-                    <tr>   
-                        <th>
-                            <span class="property convidados">2 convidados</span>
-                            <span class="property duracao">45m</span>
-                            <span class="property forma">Sobremesa</span>
-                            <span class="property dificuldade">Dificuldade baixa</span>
-                        </th>
-                    </tr>
-                    <tr>
-                        <th>Ingredientes para fazer Cheesecake com dióspiro</th>
-                    </tr>
-                    <tr>
-                        <td colspan="2">
-                            <ul>
-                                <li>300g dióspiro muito maduro</li>
-                                <li>1 colher de sobremsa limão (sumo)</li>
-                                <li>100g queijo Ricotta</li>
-                                <li>2 folhas de gelatina</li>
-                                <li>30g açúcar em pó</li>
-                                <li>1 canela em pó</li>
-                                <li>1 hortelã fresca</li>
-                                <li>2 bolacha digestiva</li>
-                            </ul>
-                        </td>
-                    </tr>
-                </table>
-               
-
-                <h2>Passos para fazer Cheesecake com dióspiro</h2>
-                <p class="receita">1 - Tape com película aderente um dos lados de dois aros metálicos, com o diâmetro das bolachas. Coloque as bolachas no interior. Em seguida, demolhe as folhas de gelatina num pouco de água fria.</p>
-                <p class="receita">2 - Lave bem os dióspiros e coloque-os com a casca no copo liquidificador. Junte o sumo do limão e triture muito bem. Leve a aquecer sem deixar ferver.</p>
-                <p class="receita">3 - Bata muito bem o queijo com o açúcar. Escorra as folhas de gelatina, adicione-as ao puré quente de dióspiro e mexa, até dissolver. Misture com o creme de queijo, divida pelos aros e leve a refrigerar até solidificar (2 a 3 horas).</p>
-                <p class="receita">4 - Retire a película e coloque os aros nos pratos de servir. Solte os aros, polvilhe os cheesecakes com canela e decore com folhas de hortelã.</p>
-            </div>
+            <br>
         </section>
     </main>
-</div>
 </body>
 </html>

@@ -1,6 +1,6 @@
 /* TODA A PARTE DA NAV E CORPO*/
 header{
-    height: 47vh;
+    height: 45vh;
     width: 100%;
 }
 nav{
@@ -9,7 +9,7 @@ nav{
     justify-content: space-between;
     padding-top: 3%;
     padding-left: 10%;
-    margin-right: 35%;
+    margin-right: 36%;
 }
 nav ul li{
     list-style-type: none;
@@ -37,7 +37,7 @@ nav span{
 body{
     margin: 0;
     background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../images/back.png);
-    background-size: cover;
+    background-size:auto;
     background-position: center;
 }
 

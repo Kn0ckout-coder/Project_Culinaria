@@ -22,7 +22,6 @@
     },
     {
         "name": "Bolinhos de Peixe",
-        "category": "peixes",
         "image": "../images/bolinhos.jpg",
         "description": "Sabia que pode aproveitar as sobras de peixe.",
         "ingredients": [
@@ -41,6 +40,227 @@
         "steps": [
             "Coloque todos os ingredientes numa taça (menos o óleo e a maionese) e misture de forma a lascar o peixe. Quando obtiver uma massa consistente, leve-a ao frigorífico por 10 minutos.",
             "Forme discos pequenos do tamanho de uma colher de sopa e frite-os, no óleo quente, durante 3 minutos de cada lado. Sirva com a maionese."
+        ]
+    },
+    {
+        "name": "Bolo de Carne Moída",
+        "image": "../images/bolocarne.jpg",
+        "description": "O bolo de carne moída assado é um preparado simples e rápido perfeito para o almoço ou para o jantar.",
+        "ingredients": [
+            "1 kg de carne moída",
+            "1 ovo",
+            "1 cebola picada",
+            "1 colher de chá de shoyu(soja) ou molho inglês",
+            "½ xícara de aveia em flocos finos",
+            "½ xícara de molho de tomate pronto ou molho barbecue",
+            "½ colher de chá de sal",
+            "3 ramos de salsinha picada"
+            
+        ],
+        "steps": [
+            "Preaqueça o forno nos 190-200ºC e leve ao fogo uma frigideira com o óleo ou azeite. Quando o óleo estiver quente adicione a cebola picada e refogue por 2-3 minutos, mexendo de vez em quando, até ficar macia e começar a dourar",
+            "Bata o ovo e adicione a cebola refogada e os restantes ingredientes: o shoyu ou molho inglês, a aveia, metade do molho de tomate ou molho barbecue, a salsinha, o sal e a carne moída. Misture tudo com as mãos até obter uma massa de carne moída consistente.",
+            "Coloque a carne moída sobre uma folha de papel manteiga e modele num formato alongado",
+            "Leve para assar no forno nos 190-200ºC por 1 hora ou até dourar, sem cobrir com papel alumínio. Depois retire e reserve por 5 minutos, para que os sucos assentem e para que o bolo de carne moída assado fique mais consistente. Depois fatie e sirva"
+        ]
+    },
+    {
+        "name": "Caldo de Peixe",
+        "image": "../images/caldo.jpeg",
+        "description": "O caldo de peixe é uma receita saudável e nutritiva, que fica pronta em apenas 30 minutos.",
+        "ingredients": [
+            "100g batata",
+            "4 colheres de café de sal",
+            "½ malagueta vermelha",
+            "1 dourada (espinha e cabeça)",
+            "1,3L água",
+            "300g tomate maduro",
+            "60g pimento Verde",
+            "70g pimento vermelho",
+            "100g cebola",
+            "150g alho-francês",
+            "2 colheres de sopa de azeite",
+            "150g cenoura",
+            "200g curgete"
+        ],
+        "steps": [
+          "Descasque e pique finamente a cebola, o alho e a parte branca do alho-francês. Leve ao lume numa panela com o azeite.",
+          "Pele as cenouras, a courgette e a batata, corte-as em pedaços pequenos e deite na panela. Tempere com metade do sal e tape.",
+          "Noutro tacho, junte as cascas e os topos da courgette e da cenoura, juntamente com as cascas da cebola, a parte verde do alho-francês e a malagueta. Junte a espinha e a cabeça do peixe e a água. Tempere com o restante sal e deixe ferver destapado sobre lume moderado.",
+          "Entretanto, adicione à panela com os legumes o tomate e o pimento vermelho, limpos de sementes e picados em pedaços pequenos, mexa e cozinhe durante cerca de 20 minutos com a panela tapada.", 
+          "Pique para uma taça o pimento verde em cubos muito pequenos.",
+          "Com a ajuda de um coador, coe o caldo do peixe para a panela com os legumes. Triture tudo com a varinha mágica.",
+          "Junte ao caldo os coentros picados e toda a carne que conseguir retirar das cabeças e espinhas do peixe (65g).",
+          "Acompanhe a sopa com o pimento verde."
+        ]
+    },
+    {
+        "name": "Cebola Frita Caramelizada",
+        
+        "image": "../images/cebola.jpg",
+        "description": "Cebola frita caramelizada com objetivo de se juntar com hambúrguer e sentir-se o delicioso sabor.",
+        "ingredients": [
+            "2 cebolas",
+            "2 colheres de sopa de shoyu(molho de soja)",
+            "2 colheres de sopa de canela em pó",
+            "1 colher de chá de manteiga",
+            "½ colher de chá de açúcar mascavo"
+            
+        ],
+        "steps": [
+          "Comece por descascar as cebolas e cortar em rodelas",
+          "Leve ao fogo uma frigideira com a manteiga e, quando derreter, coloque as rodelas de cebola espalhadas. Deixe no fogo brando por uns 5-7 minutos ou até a cebola ficar transparente.",
+          "Após o passo anterior, acrescente o shoyu(molho de soja) e o açúcar e mexa para misturar e separar os aros de cebola. Deixe no fogo brando por mais 5 minutos.",
+          "Quando a cebola ficar bem macia e caramelada, pode desligar o fogo e servir com o humbúguer que fez a parte"
+        ]
+    },
+    {
+        "name": "Cheesecake com Dióspiro",
+        "image": "../images/cheese.jpg",
+        "description": "Parente do tomate, difere deste pelo sabor doce e cor mais alaranjada. Além de serem excelentes ao natural, os dióspiros, mesmo os muito maduros, podem transformar-se em receitas deliciosas como este cheesecake com dióspiro.",
+        "ingredients": [
+            "300g dióspiro muito maduro",
+            "1 colher de sobremsa limão (sumo)",
+            "100g queijo Ricotta",
+            "2 folhas de gelatina",
+            "30g açúcar em pó",
+            "1 canela em pó",
+            "1 hortelã fresca",
+            "2 bolacha digestiva"
+        ],
+        "steps": [
+          "Tape com película aderente um dos lados de dois aros metálicos, com o diâmetro das bolachas. Coloque as bolachas no interior. Em seguida, demolhe as folhas de gelatina num pouco de água fria.",
+          "Lave bem os dióspiros e coloque-os com a casca no copo liquidificador. Junte o sumo do limão e triture muito bem. Leve a aquecer sem deixar ferver.",
+          "Bata muito bem o queijo com o açúcar. Escorra as folhas de gelatina, adicione-as ao puré quente de dióspiro e mexa, até dissolver. Misture com o creme de queijo, divida pelos aros e leve a refrigerar até solidificar (2 a 3 horas).",
+          "Retire a película e coloque os aros nos pratos de servir. Solte os aros, polvilhe os cheesecakes com canela e decore com folhas de hortelã."
+        ]
+    },
+    {
+        "name": "Feijoada do Mar",
+        "image": "../images/feijoada.jpg",
+        "description": "Uma feijoada do mar é o prato tradicional perfeito para aproveitar as sobras de peixe.",
+        "ingredients": [
+           "300g sobras de caldeirada de peixe",
+           "50g cebola picada",
+           "1 colher de sopa de azeite",
+           "120g preparado para sopa portuguesa",
+           "½  colher de sopa sal",
+           "50 g polpa de tomate com cebola e alho",
+           "3 colher de sopa de vinho branco",
+           "260g feijão-branco cozido escorrido ou sobras de feijão-branco cozido",
+           "Coentros picados a gosto",
+           "Manjericão picado a gosto"
+        ],
+        "steps": [
+         "Coe as sobras de caldeirada com uma escumadeira e retire as peles e as espinhas ao peixe, se existirem. Reserve o caldo da caldeirada.",
+         "Aloure a cebola no azeite quente e adicione a mistura de legumes para sopa e o sal. Tape o tacho e deixe suar em lume brando cerca de 5 minutos.",
+         "Junte a polpa de tomate, refresque com o vinho branco e deixe ferver por mais 2 ou 3 minutos. Acrescente o caldo reservado da caldeirada e o feijão e ferva suavemente mais 10 minutos. Introduza as sobras da caldeirada, deixe aquecer e salpique com coentros e folhas de manjericão. Sirva de imediato."
+        ]
+    },
+    {
+        "name": "Linguiça Recheada na Airfryer",
+        "image": "../images/linguica.jpg",
+        "description": "Esta maravilhosa receita de linguiça recheada na airfryer é muito simples e rápida de preparar.",
+        "ingredients": [
+           "4 gomos de linguiça",
+           "1/4 de cebola picada",
+           "1 tomate picado",
+           "150g de queijo mussarela",
+           "1/2 colher de chá de orégano a gosto",
+           "1 colher de sopa de nata"
+        ],
+        "steps": [
+          "Em uma tábua, corte as linguiças de uma ponta a outra apenas até a metade",
+          "Depois, em uma tigela, misture a cebola, o tomate, o queijo mussarela, o orégano, e a colher de nata.",
+          "Em seguida, recheie o espaço que ficou no meio da linguiça com essa mistura",
+          "Leve para assar na airfryer a 180ºC por aproximadamente 20 minutos",
+          "Agora e sevir"
+        ]
+    },
+    {
+        "name": "Mousse de Cacau",
+        "image": "../images/mousse.jpg",
+        "description": "Esta maravilhosa receita de mousse de cacau não leva açúcar é muito simples e rápida de preparar.",
+        "ingredients": [
+          "2 colheres de sopa de cacau em pó",
+          "2 colheres de sopa de mel",
+          "2 colheres de sopa de canela em pó",
+          "1 unidade de abacate maduro",
+          "1 colher de café de sal marinho"
+        ],
+        "steps": [
+          "Juntar a gema, o açúcar amarelo e o cacau em pó.",
+          "Bater as claras em castelo e juntar ao preparado anterior.",
+          "Levar ao frigorifico."
+        ]
+    },
+    {
+        "name": "Panquecas Americanas",
+        "image": "../images/panquecas.jpg",
+        "description": "As panquecas são uma delícia que pode ser consumida com doces ou salgados a qualquer hora do dia.",
+        "ingredients": [
+          "540g de farinha de trigo",
+          "520 ml de leite",
+          "120g de açúcar refinado",
+          "120g de manteiga derretida",
+          "4 ovos",
+          "1 colher de sopa de fermento em pó",
+          "um pouco de sal",
+          "manteiga para fritar"
+        ],
+        "steps": [
+          "Comece preparando sua panqueca americana peneirando para uma tigela os ingredientes secos: a farinha e açúcar.",
+          "Em uma outra tigela bata os ovos e acrescente o leite e a manteiga. Misture com um garfo ou um batedor e adicione gradualmente esse preparado aos ingredientes secos, ao mesmo tempo que vai mexendo",
+          "Coloque um cubo de manteiga derretendo em uma frigideira antiaderente, em fogo médio. Com uma colher para sopa coloque uma porção da massa de panqueca americana fritando e, quando começarem a se formar furinhos, vire ao contrário",
+          "Quando as panquecas estiverem prontas coloque num prato, empilhadas.Bom apetite."
+        ]
+    },
+    {
+        "name": "Pasta de Salmão",
+        "image": "../images/salmao.jpg",
+        "description": "Uma deliciosa pasta de salmão",
+        "ingredients": [
+         "100g sobras de salmão cozido",
+         "50g sobras de salmão fumado",
+         "½ chalota",
+         "½ dente alho",
+         "½ limão(sumo)",
+         "1 colher de sopa de alcaparras picadas",
+         "1 colher de sopa de cebolinho fresco",
+         "1 colher de sopa de salsa fresca",
+         "1 colher de chá de limão (raspa)",
+         "50g queijo quark",
+         "1 colher de café sal",
+         "pimenta a gosto"
+        ],
+        "steps": [
+          "Num robot de cozinha, coloque o peixe cozido, o salmão fumado, a chalota e o alho descascados, as alcaparras, o cebolinho (reserve um pouco) e a salsa picados.",
+          "Regue com sumo de limão e polvilhe com a raspa. Adicione o queijo e tempere com o sal e pimenta.",
+          "Triture até obter uma pasta homogénea. Coloque em frascos e deixe repousar no frigorífico. Antes de servir polvilhe com pimenta e cebolinho picado."
+        ]
+    },
+    {
+        "name": "Strogonoff",
+        "image": "../images/strogonoff.jpg",
+        "description": "O strogonoff é um prato amado por todos e muito fácil de ser preparado.",
+        "ingredients": [
+         "1 kg de pato",
+         "1 cebola picada",
+         "2 dentes de alho picado ou amassado",
+         "800 ml de leite fresco",
+         "½ xícara com extrato de tomate",
+         "2 colheres de sopa de molho inglês",
+         "1 colher de café de mostarda",
+         "300g de cogumelos cortados em fatias",
+         "3 colheres de sopa de azeite",
+         "sal a gosto"
+        ],
+        "steps": [
+          "Em uma frigideira grande e alta (ou panela), esquente um fio de azeite e refogue os cogumelos até dourarem.",
+          "Na mesma frigideira, coloque mais um fio de azeite e adicione a carne para dourar, depois coloque os cogumelos",
+          "Ainda na mesma frigideira, regue com mais azeite e refogue a cebola e o alho até dourarem.",
+          " Na frigideira, acrescente o extrato de tomate, o molho inglês e a mostarda. Misture bem.",
+          "Junte a carne e os cogumelos com o refogado e misture bem"
         ]
     }
 ]

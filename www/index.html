@@ -2,13 +2,8 @@
 <html lang="pt">
 <head>
     <!-- ***********IMPORTAÇÕES*************** -->
-    <link rel="stylesheet" href="styles/variasReceitas.css"> 
-    <script src="scripts/rating.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles/index.css"> 
     <meta charset="UTF-8">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&family=Noto+Sans+SC:wght@300&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Receitas de Culinária</title>
 </head>
@@ -18,72 +13,20 @@
         <nav>
             <h2>TFRC <span>Foods</span></h2>
             <ul>
-                <li><a href="html/sobremesas.html">Sobremesas</a></li> 
-                <li><a href="html/peixes.html">Peixes</a></li>
-                <li><a href="html/carnes.html">Carnes</a></li>
+                <li><a href="./html/destaque.html">Página do Site</a></li>
+                <li><a href="./html/skills.html">Página das Skills</a></li> 
             </ul>
         </nav>
-        <h2>Receitas em Destaque</h2>
         <br>
     </header>
     <main>
         <section>
-                <a href="html/cebola.html"><img src="images/cebola.jpg"></a>
-                <a href="html/cebola.html"><h3>Cebola Frita Caramelizada</h3></a>
-                <a href="html/cebola.html"><p>Cebola frita caramelizada com objetivo de se juntar com hambúrguer e sentir-se o delicioso sabor.</p></a>
-                <!-- ESTRELAS -->
-                <div data-role="rating-container" data-image-id='cebola'>
-                    <div data-role='rating' id="rating">
-                    <span data-role='star' data-value="1">&#9733;</span> 
-                    <span data-role='star' data-value="2">&#9733;</span>
-                    <span data-role='star' data-value="3">&#9733;</span>
-                    <span data-role='star' data-value="4">&#9733;</span>
-                    <span data-role='star' data-value="5">&#9733;</span>
-                    </div>
-                </div>
-                <!-- --ESTRELAS-- -->
-        </section>
-        <section>
-                <a href="html/mousse.html"><img src="images/mousse.jpg"></a>
-                <a href="html/mousse.html"><h3>Mousse de Cacau</h3></a>
-                <a href="html/mousse.html"><p>Esta maravilhosa receita de mousse de cacau não leva açúcar é muito simples e rápida de preparar.</p></a>
-                <div data-role="rating-container" data-image-id='mousse'>
-                    <div data-role='rating' id="rating">
-                    <span data-role='star' data-value="1">&#9733;</span> 
-                    <span data-role='star' data-value="2">&#9733;</span>
-                    <span data-role='star' data-value="3">&#9733;</span>
-                    <span data-role='star' data-value="4">&#9733;</span>
-                    <span data-role='star' data-value="5">&#9733;</span>
-                    </div>
-                </div>
-        </section>
-        <section>
-            <a href="html/bolodecarne.html"><img src="images/bolocarne.jpg"></a>
-            <a href="html/bolodecarne.html"><h3>Bolo de Carne Moída</h3></a>
-            <a href="html/bolodecarne.html"><p>O bolo de carne moída assado é um preparado simples e rápido perfeito para o almoço ou para o jantar.</p></a>
-            <div data-role="rating-container" data-image-id='bolocarne'>
-                <div data-role='rating' id="rating">
-                <span data-role='star' data-value="1">&#9733;</span> 
-                <span data-role='star' data-value="2">&#9733;</span>
-                <span data-role='star' data-value="3">&#9733;</span>
-                <span data-role='star' data-value="4">&#9733;</span>
-                <span data-role='star' data-value="5">&#9733;</span>
-                </div>
-            </div>
-        </section>
-        <section>
-            <a href="html/panquecas.html"><img src="images/panquecas.jpg"></a>
-            <a href="html/panquecas.html"><h3>Panquecas Americanas</h3></a>
-            <a href="html/panquecas.html"><p>As panquecas são uma delícia que pode ser consumida com doces ou salgados a qualquer hora do dia.</p></a>
-            <div data-role="rating-container" data-image-id='panquecas'>
-                <div data-role='rating' id="rating">
-                <span data-role='star' data-value="1">&#9733;</span> 
-                <span data-role='star' data-value="2">&#9733;</span>
-                <span data-role='star' data-value="3">&#9733;</span>
-                <span data-role='star' data-value="4">&#9733;</span>
-                <span data-role='star' data-value="5">&#9733;</span>
-                </div>
-            </div>
+            <h2>Âmbito do Projeto e Papel da Aplicação</h2>
+            <p>O nosso projeto tem como objetivo o uso de DOM e aproveitamento de HTML5 para mostrar diversas receitas a partir de páginas como sobremesas,
+               peixes e carnes que contêm algumas receitas realizadas com os respetivos alimentos, ou no caso das sobremesas para comer à sobremesa.
+               Assim que se clica numa das receitas toda a página é gerada através de um ficheiro javascript que procura informações guardadas num ficheiro .json, 
+               a explicar como a receita é realizada, os ingredientes que leva e até um rating de estrelas.
+            </p>
         </section>
     </main>
 </body>

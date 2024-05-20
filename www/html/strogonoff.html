@@ -1,91 +1,42 @@
 <!DOCTYPE html>
 <html lang="pt">
 <head>
-    <link rel="stylesheet" href="strogonoff.css">
-    <script src="../Index/index.js"></script>
+    <link rel="stylesheet" href="../styles/receitas.css">
+    <script src="../scripts/rating.js"></script>
+    <script src="../scripts/main.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&family=Noto+Sans+SC:wght@300&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Strogonoff</title>
+    <title>Receitas de Culinária</title>
 
 </head>
 <body>
-
-    <div class = "cabeca">
+    <header>
         <nav>
-            <h2 class="logo">TFRC <span class="title">Foods</span></h2>
+            <h2>TFRC <span>Foods</span></h2>
             <ul>
-
-                <li><a class="anav" href="..\.\Sobremesas\sobremesas.html">Sobremesas</a></li>
-                <li><a class="anav" href="..\.\Peixes\peixes.html">Peixes</a></li>
-                <li><a class="anav" href="..\.\Carnes\carnes.html">Carnes</a></li>
-                <li><a class="anav" href="..\.\index.html">Receitas em Destaque</a></li>
+                <li><a href="./sobremesas.html">Sobremesas</a></li>
+                <li><a href="./peixes.html">Peixes</a></li>
+                <li><a href="../index.html">Receitas em Destaque</a></li>
             </ul>
         </nav>
-    </div>
-<div  class = "comida">
-    <h2>Strogonoff</h2>
-    <div>
-    <h2>Ingredientes e Passos</h2>
-    <br>
-    <main class="main-page">
-        <section  class="recipeList">
-            <div>
-                   <img src="strogonoff.jpg"></a>
-                    <h3>Strogonoff</h3></a>
-                    <p class="descrição">O strogonoff é um prato amado por todos e muito fácil de ser preparado.</p></a>
-                    <div class="rating-container" data-image-id="strogonoff">
-                        <div class="rating" id="rating">
-                            <span class="star" data-value="1">&#9733;</span>
-                            <span class="star" data-value="2">&#9733;</span>
-                            <span class="star" data-value="3">&#9733;</span>
-                            <span class="star" data-value="4">&#9733;</span>
-                            <span class="star" data-value="5">&#9733;</span>
-                        </div>
-                    </div>
+    </header>
+    <main>
+        <section>
+            <div data-role="rating-container" data-image-id='strogonoff'>
+                <div data-role='rating' id="rating">
+                <span data-role='star' data-value="1">&#9733;</span> 
+                <span data-role='star' data-value="2">&#9733;</span>
+                <span data-role='star' data-value="3">&#9733;</span>
+                <span data-role='star' data-value="4">&#9733;</span>
+                <span data-role='star' data-value="5">&#9733;</span>
                 </div>
-                <br> <br>
-                    <table>
-                        <tr>   
-                            <th>
-                                <span class="property convidados">2 convidados</span>
-                                <span class="property duracao">30m</span>
-                                <span class="property forma">Prato Principal</span>
-                                <span class="property dificuldade">Dificuldade baixa</span>
-                            </th>
-                        </tr>
-                        <tr>
-                            <th>Ingredientes para fazer Strogonoff</th>
-                        </tr>
-                        <tr>
-                            <td colspan="2">
-                                <ul>
-                                    <li>1 kg de pato</li>
-                                    <li>1 cebola picada</li>
-                                    <li>2 dentes de alho picado ou amassado</li>
-                                    <li>800 ml de leite fresco</li>
-                                    <li>½ xícara com extrato de tomate</li>
-                                    <li>2 colheres de sopa de molho inglês</li>
-                                    <li>1 colher de café de mostarda</li>
-                                    <li>300g de cogumelos cortados em fatias</li>
-                                    <li>3 colheres de sopa de azeite</li>
-                                    <li>Sal a gosto</li>
-                                </ul>
-                            </td>
-                        </tr>
-                    </table>
-                <h2>Passos para fazer Strogonoff</h2>
-                <p class="receita">1 - Em uma frigideira grande e alta (ou panela), esquente um fio de azeite e refogue os cogumelos até dourarem.</p>
-                <p class="receita">2 - Na mesma frigideira, coloque mais um fio de azeite e adicione a carne para dourar, depois coloque os cogumelos</p>
-                <p class="receita">3 - Ainda na mesma frigideira, regue com mais azeite e refogue a cebola e o alho até dourarem.</p>
-                <p class="receita">4 - Na frigideira, acrescente o extrato de tomate, o molho inglês e a mostarda. Misture bem.</p>
-                <p class="receita">5 - Junte a carne e os cogumelos com o refogado e misture bem</p>
+            </div>
+            <br>
         </section>
     </main>
-</div>
-</div>
 </body>
 </html>

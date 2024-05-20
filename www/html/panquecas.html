@@ -1,90 +1,42 @@
 <!DOCTYPE html>
 <html lang="pt">
 <head>
-    <link rel="stylesheet" href="panquecas.css">
-    <script src="../Index/index.js"></script>
+    <link rel="stylesheet" href="../styles/receitas.css">
+    <script src="../scripts/rating.js"></script>
+    <script src="../scripts/main.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&family=Noto+Sans+SC:wght@300&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Panquecas Americanas</title>
+    <title>Receitas de Culinária</title>
  
 </head>
 <body>
-  
-    <div class = "cabeca">
+    <header>
         <nav>
-            <h2 class="logo">TFRC <span class="title">Foods</span></h2>
+            <h2>TFRC <span>Foods</span></h2>
             <ul>
-
-                <li><a class="anav" href="..\.\Sobremesas\sobremesas.html">Sobremesas</a></li>
-                <li><a class="anav" href="..\.\Peixes\peixes.html">Peixes</a></li>
-                <li><a class="anav" href="..\.\Carnes\carnes.html">Carnes</a></li>
-                <li><a class="anav" href="..\.\index.html">Receitas em Destaque</a></li>
+                <li><a href="./peixes.html">Peixes</a></li>
+                <li><a href="./carnes.html">Carnes</a></li>
+                <li><a href="../index.html">Receitas em Destaque</a></li>
             </ul>
         </nav>
-    </div>
-<div class = "comida">
-    <h2>Panquecas Americanas</h2>
-    <div>
-    <h2>Ingredientes e Passos</h2>
-    <br>
-    <main class="main-page">
-        <section class="recipeList">
-        <div>
-                <img src="panquecas.jpg"></a>
-                <h3>Panquecas Americanas</h3></a>
-               <p>As panquecas são uma delícia que pode ser consumida com doces ou salgados a qualquer hora do dia.</p></a>
-               <div class="rating-container" data-image-id="panquecas">
-                <div class="rating" id="rating">
-                    <span class="star" data-value="1">&#9733;</span>
-                    <span class="star" data-value="2">&#9733;</span>
-                    <span class="star" data-value="3">&#9733;</span>
-                    <span class="star" data-value="4">&#9733;</span>
-                    <span class="star" data-value="5">&#9733;</span>
+    </header>
+    <main>
+        <section>
+            <div data-role="rating-container" data-image-id='panquecas'>
+                <div data-role='rating' id="rating">
+                <span data-role='star' data-value="1">&#9733;</span> 
+                <span data-role='star' data-value="2">&#9733;</span>
+                <span data-role='star' data-value="3">&#9733;</span>
+                <span data-role='star' data-value="4">&#9733;</span>
+                <span data-role='star' data-value="5">&#9733;</span>
                 </div>
             </div>
-        </div>
-                    <br> <br>
-                    <table>
-                        <tr>   
-                            <th>
-                                <span class="property convidados">2 convidados</span>
-                                <span class="property duracao">15m</span>
-                                <span class="property forma">Pequeno Almoço</span>
-                                <span class="property dificuldade">Dificuldade baixa</span>
-                            </th>
-                        </tr>
-                        <tr>
-                            <th>Ingredientes para fazer Panquecas Americanas</th>
-                        </tr>
-                        <tr>
-                            <td colspan="2">
-                                <ul>
-                                    <li>540g de farinha de trigo</li>
-                                    <li>520 ml de leite</li>
-                                    <li>120g de açúcar refinado</li>
-                                    <li>120g de manteiga derretida</li>
-                                    <li>4 ovos</li>
-                                    <li>1 colher de sopa de fermento em pó</li>
-                                    <li>um pouco de sal</li>
-                                    <li>manteiga para fritar</li>
-                                </ul>
-                            </td>
-                        </tr>
-                    </table>
-                <h2>Passos para fazer Panquecas Americanas</h2>
-                <p class="receita">1 - Comece preparando sua panqueca americana peneirando para uma tigela os ingredientes secos: a farinha e açúcar.</p>
-                <p class="receita">2 - Em uma outra tigela bata os ovos e acrescente o leite e a manteiga. Misture com um garfo ou um batedor e adicione gradualmente esse preparado aos ingredientes secos, ao mesmo tempo que vai mexendo</p>
-                <p class="receita">3 - Coloque um cubo de manteiga derretendo em uma frigideira antiaderente, em fogo médio. Com uma colher para sopa coloque uma porção da massa de panqueca americana fritando e, quando começarem a se formar furinhos, vire ao contrário</p>
-                <p class="receita">4 - Quando as panquecas estiverem prontas coloque num prato, empilhadas.Bom apetite.</p>
-                <br>
-                <br>
-                <br>
-            </div>
+            <br>
+        </section>
     </main>
-</div>
 </body>
 </html>

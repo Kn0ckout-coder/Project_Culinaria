@@ -1,82 +1,41 @@
 <!DOCTYPE html>
 <html lang="pt">
 <head>
-    <link rel="stylesheet" href="mousse.css">
-    <script src="../Index/index.js"></script>
+    <link rel="stylesheet" href="../styles/receitas.css">
+    <script src="../scripts/main.js"></script>
+    <script src="../scripts/rating.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&family=Noto+Sans+SC:wght@300&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mousse de cacau</title>
-
-<body>
-    <div class = "cabeca">
-        <nav>
-            <h2 class="logo">TFRC <span class="title">Foods</span></h2>
-            <ul>
-
-                <li><a class="anav" href="..\.\Sobremesas\sobremesas.html">Sobremesas</a></li>
-                <li><a class="anav" href="..\.\Peixes\peixes.html">Peixes</a></li>
-                <li><a class="anav" href="..\.\Carnes\carnes.html">Carnes</a></li>
-                <li><a class="anav" href="..\.\index.html">Receitas em Destaque</a></li>
-            </ul>
-        </nav>
-    </div>
-<div class = "comida">
-    <h2>Mousse de cacau</h2>
-    <div>
-    <h2>Ingredientes e Passos</h2>
-    <br>
-    <main class="main-page">
-        <section class="recipeList">
-            <div>
-                <img src="mousse.jpg">
-                <h3>Mousse de Cacau</h3>
-                <p>Esta maravilhosa receita de mousse de cacau não leva açúcar é muito simples e rápida de preparar.</p>
-                <div class="rating-container" data-image-id="mousse">
-                    <div class="rating" id="rating">
-                        <span class="star" data-value="1">&#9733;</span>
-                        <span class="star" data-value="2">&#9733;</span>
-                        <span class="star" data-value="3">&#9733;</span>
-                        <span class="star" data-value="4">&#9733;</span>
-                        <span class="star" data-value="5">&#9733;</span>
+    <title>Receitas de Culinária</title>
+</head>
+    <body>
+        <header>
+            <nav>
+                <h2>TFRC <span>Foods</span></h2>
+                <ul>
+                    <li><a href="./peixes.html">Peixes</a></li>
+                    <li><a href="./carnes.html">Carnes</a></li>
+                    <li><a href="../index.html">Receitas em Destaque</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section>
+                <div data-role="rating-container" data-image-id='mousse'>
+                    <div data-role='rating' id="rating">
+                    <span data-role='star' data-value="1">&#9733;</span> 
+                    <span data-role='star' data-value="2">&#9733;</span>
+                    <span data-role='star' data-value="3">&#9733;</span>
+                    <span data-role='star' data-value="4">&#9733;</span>
+                    <span data-role='star' data-value="5">&#9733;</span>
                     </div>
                 </div>
-            </div>
-                    <br> <br>
-                    <table>
-                        <tr>   
-                            <th>
-                                <span class="property convidados">2 convidados</span>
-                                <span class="property duracao">10m</span>
-                                <span class="property forma">Sobremesa</span>
-                                <span class="property dificuldade">Dificuldade baixa</span>
-                            </th>
-                        </tr>
-                        <tr>
-                            <th>Ingredientes para fazer Mousse de cacau</th>
-                        </tr>
-                        <tr>
-                            <td colspan="2">
-                                <ul>
-                                    <li>2 colheres de sopa de cacau em pó</li>
-                                    <li>2 colheres de sopa de mel</li>
-                                    <li>2 colheres de sopa de canela em pó</li>
-                                    <li>1 unidade de abacate maduro</li>
-                                    <li>1 colher de café de sal marinho</li>
-                                </ul>
-                            </td>
-                        </tr>
-                    </table>
-                <h2>Passos para fazer Mousse de cacau sem açúcar</h2>
-                <p class="receita">1 - Juntar a gema, o açúcar amarelo e o cacau em pó.</p>
-                <p class="receita">2 - Bater as claras em castelo e juntar ao preparado anterior.</p>
-                <p class="receita">3 - Levar ao frigorifico.</p>
-            </div>
-        </section>   
-    </main>
-</div>
-</body>
+                <br>
+            </section>
+        </main>
+    </body>
 </html>
