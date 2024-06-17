@@ -19,13 +19,13 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         fetchRecipes() {
-            fetch('/api/recipes')
+            fetch('/receitas.json')
                 .then(response => response.json())
                 .then(data => {
                     this.recipes = data;
                     this.loadRecipeByPage();
                 })
-                .catch(error => console.error('Erro ao carregar os dados:', error));
+                .catch(error => console.error('Erro ao carregar dados:', error));
         }
 
         getPageName() {
@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const recipeName = this.getRecipeName(pageName);
 
             if (recipeName) {
-                const selectedRecipe = this.recipes.find(recipe => recipe.name === recipeName);
+                const selectedRecipe = this.recipes.find(receita => receita.name === recipeName);
 
                 if (selectedRecipe) {
                     this.displayRecipe(selectedRecipe);
@@ -78,20 +78,19 @@ document.addEventListener('DOMContentLoaded', () => {
                     <tr>
                         <td colspan="2">
                         <ul>
-                            ${recipe.ingredients.split(',').map(ingrediente => `<li>${ingrediente}</li>`).join('')}
+                            ${recipe.ingredients.map(ingrediente => `<li>${ingrediente}</li>`).join('')}
                         </ul>
                         </td>
                     </tr>
                 </table>
                 <h2>Passos para fazer ${recipe.name}</h2>
                 <ol>
-                    ${recipe.steps.split('.').map(passo => `<li>${passo}</li>`).join('')}
+                    ${recipe.steps.map(passo => `<li>${passo}</li>`).join('')}
                 </ol>
             `;
             sectionEl.insertAdjacentHTML('beforeend', lastRecipePart);
         }
     }
-
     const recipeLoader = new RecipeLoader();
     recipeLoader.fetchRecipes();
 });
