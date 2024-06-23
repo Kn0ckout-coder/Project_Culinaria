@@ -1,13 +1,19 @@
 const express = require('express');
 const handler = require('./request-handlers');
 const app = express();
+const path = require('path');
 const port = 8081;
 app.set('view engine', 'ejs');
 
+app.set('views', path.join(__dirname, 'views'));
 app.use(express.static(__dirname + '/www'));
 
 app.get('/', (req, res) => {
     res.render('index');
+});
+
+app.get('/skills', (req, res) => {
+    res.render('skills');
 });
 
 
