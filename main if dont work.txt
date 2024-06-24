@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     class RecipeLoader {
         constructor() {
+            this.recipes = [];
             this.nameMap = {
                 'arroz': 'Arroz Doce',
                 'bolinhos': 'Bolinhos de Peixe',
@@ -43,12 +44,51 @@ document.addEventListener('DOMContentLoaded', () => {
                 const selectedRecipe = this.recipes.find(recipe => recipe.name === recipeName);
 
                 if (selectedRecipe) {
-                    // Redirecionar para a rota do servidor que renderiza a página com o template EJS
-                    window.location.href = `/recipe/${encodeURIComponent(selectedRecipe.name)}`;
+                    this.displayRecipe(selectedRecipe);
                 } else {
                     console.error('Receita não encontrada.');
                 }
             }
+        }
+
+        displayRecipe(recipe) {
+            const titleEl = document.querySelector('main');
+            const sectionEl = document.querySelector('section');
+
+            const titlePart = `
+                <br>
+                <h2>${recipe.name}</h2>
+            `;
+            titleEl.insertAdjacentHTML('beforebegin', titlePart);
+
+            const firstRecipePart = `
+                <img src="${recipe.image}">
+                <h3>${recipe.name}</h3>
+                <p>${recipe.description}</p>
+            `;
+
+            sectionEl.insertAdjacentHTML('afterbegin', firstRecipePart);
+
+            const lastRecipePart = `
+                <br>
+                <table>
+                    <tr>
+                        <th>Ingredientes para ${recipe.name}</th>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                        <ul>
+                            ${recipe.ingredients.split(',').map(ingrediente => `<li>${ingrediente}</li>`).join('')}
+                        </ul>
+                        </td>
+                    </tr>
+                </table>
+                <h2>Passos para fazer ${recipe.name}</h2>
+                <ol>
+                    ${recipe.steps.split('.').map(passo => `<li>${passo}</li>`).join('')}
+                </ol>
+            `;
+            sectionEl.insertAdjacentHTML('beforeend', lastRecipePart);
         }
     }
 

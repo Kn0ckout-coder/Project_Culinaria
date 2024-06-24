@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= recipe.name %></title>
+</head>
+<body>
+    <main>
+        <br>
+        <h2><%= recipe.name %></h2>
+    </main>
+    <section>
+        <img src="<%= recipe.image %>">
+        <h3><%= recipe.name %></h3>
+        <p><%= recipe.description %></p>
+        <br>
+        <table>
+            <tr>
+                <th>Ingredientes para <%= recipe.name %></th>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <ul>
+                        <% recipe.ingredients.split(',').forEach(ingrediente => { %>
+                            <li><%= ingrediente %></li>
+                        <% }); %>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+        <h2>Passos para fazer <%= recipe.name %></h2>
+        <ol>
+            <% recipe.steps.split('.').forEach(passo => { %>
+                <li><%= passo %></li>
+            <% }); %>
+        </ol>
+    </section>
+    <script src="/js/main.js"></script>
+</body>
+</html>
