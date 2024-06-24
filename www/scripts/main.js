@@ -16,6 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 'strogonoff': 'Strogonoff'
             };
         }
+        
 
         fetchRecipes() {
             fetch('/api/recipes')
@@ -28,6 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         getPageName() {
+            //obter a janela, separar e returnar a ultima parte (nome) e substituir o "html" por ""
             return window.location.pathname.split('/').pop().replace('.html', '');
         }
 
@@ -43,7 +45,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 const selectedRecipe = this.recipes.find(recipe => recipe.name === recipeName);
 
                 if (selectedRecipe) {
-                    // Redirecionar para a rota do servidor que renderiza a página com o template EJS
+                    // Rediricionar para EJS
                     window.location.href = `/recipe/${encodeURIComponent(selectedRecipe.name)}`;
                 } else {
                     console.error('Receita não encontrada.');
@@ -51,7 +53,6 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         }
     }
-
     const recipeLoader = new RecipeLoader();
     recipeLoader.fetchRecipes();
 });

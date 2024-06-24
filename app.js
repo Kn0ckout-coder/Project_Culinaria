@@ -16,6 +16,20 @@ app.get('/skills', (req, res) => {
     res.render('skills');
 });
 
+app.get('/recipe/:name', (req, res) => {
+    const recipeName = req.params.name;
+
+    handler.query('SELECT * FROM recipes WHERE name = ?', [recipeName], (err, results) => {
+        if (err) {
+            return res.status(500).send(err);
+        }
+        if (results.length === 0) {
+            return res.status(404).send('Receita não encontrada');
+        }
+        const recipe = results[0];
+        res.render('recipe', { recipe });
+    });
+});
 
 app.get('/api/recipes', (req, res) => {
     handler.query('SELECT * FROM recipes', (err, results) => {
