@@ -38,7 +38,7 @@ app.get('/api/recipes', (req, res) => {
         }
         res.status(200).json(results);
     });
-});
+}); 
 
 app.listen(port, () => {
     console.log(`Server running at http://localhost:${port}`);
